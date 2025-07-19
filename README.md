@@ -72,7 +72,9 @@ Three distinct classification models were trained and evaluated:
 
 ### Model Evaluation
 The performance of each trained model was comprehensively evaluated using a suite of metrics, including Accuracy, Precision, Recall, F1-Score, and ROC AUC. Visualizations such as ROC Curves and Confusion Matrices were utilized to provide deeper insights into model behavior and to identify the model demonstrating the greatest predictive power and generalizability.
-
+![ROC Curve Gradient Boosting](/Images/roc_curve_gradient_boosting.png "ROC Curve Gradient Boosting")
+![ROC Curve Logistic Regression](/Images/roc_curve_logistic_reg.png "ROC Curve Logistic Regression")
+![ROC Curve Random Forest](/Images/roc_curve_random_forest.png "ROC Curve Random Forest")
 
 ## Model Insights & Deployment
 ### Key Results & Model Selection
@@ -86,9 +88,13 @@ Upon comprehensive evaluation, the Gradient Boosting Classifier emerged as the s
 
 ### Feature Importance
 A detailed feature importance analysis was conducted on the chosen Gradient Boosting model to identify the most influential variables. This analysis revealed `trans_ct` (transaction count) as overwhelmingly the most important feature, significantly contributing to the model's predictive decisions. Other key features included `revolving_bal`, `trans_amt`, and `ct_chg_q4_q1`.
+![Feature Importance Gradient Boosting](/Images/feature_importance_gradient_boost.png "Feature Importance Gradient Boosting")
+
 
 ### Optimal Categorization Threshold Identification
 To translate model probabilities into actionable classifications, the optimal threshold for predicting churn was identified using the precision-recall curve. Analysis indicated a "sweet spot" for the threshold somewhere between **0.3 and 0.4**, offering a balanced trade-off between precision and recall, crucial for effective intervention strategies.
+![Precision Recall Curve Gradient Boosting](/Images/precision_recall_curve.png "Precision Recall Curve Gradient Boosting")
+
 
 ### Model Deployment & Actionable Data
 In the final step, the trained Gradient Boosting model was deployed. It was applied to the entire original dataset to generate churn probabilities for every customer. Utilizing the optimized threshold of **0.38**, customers were classified as 'predicted churn' or 'not churn'. Crucially, **126 customers (representing 1.24% of the base)** were identified as "currently at-risk" (predicted to churn but not yet attrited), providing a highly actionable segment for targeted retention efforts. The resulting dataset was then prepared and cleaned for seamless import into Power BI, enabling interactive dashboards for ongoing monitoring and strategic decision-making.
