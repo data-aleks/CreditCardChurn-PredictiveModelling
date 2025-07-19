@@ -72,6 +72,7 @@ Three distinct classification models were trained and evaluated:
 
 ### Model Evaluation
 The performance of each trained model was comprehensively evaluated using a suite of metrics, including Accuracy, Precision, Recall, F1-Score, and ROC AUC. Visualizations such as ROC Curves and Confusion Matrices were utilized to provide deeper insights into model behavior and to identify the model demonstrating the greatest predictive power and generalizability.
+
 ![ROC Curve Gradient Boosting](/Images/roc_curve_gradient_boosting.png "ROC Curve Gradient Boosting")
 ![ROC Curve Logistic Regression](/Images/roc_curve_logistic_reg.png "ROC Curve Logistic Regression")
 ![ROC Curve Random Forest](/Images/roc_curve_random_forest.png "ROC Curve Random Forest")
