@@ -3,6 +3,8 @@
 ## Overview
 This project addresses the critical challenge of customer churn within a bank’s credit card services. Leveraging Python, it encompasses comprehensive data exploration, strategic feature engineering, and robust predictive modeling. The primary objective is to equip the bank with actionable insights, accurately identifying customers most likely to churn to enable timely intervention and effective retention strategies.
 
+[Project Jupiter Notebook](/CreditCardChurn_PredictiveModelling.ipynb)
+
 ## Dataset
 * **Source:** [Kaggle – Credit Card Customers](https://www.kaggle.com/datasets/sakshigoyal7/credit-card-customers/data)
 * **Records:** Approximately 10,000 customer profiles, encompassing demographic information, credit card usage patterns, and churn status.
