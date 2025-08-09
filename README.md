@@ -112,7 +112,8 @@ This dashboard serves as the executive summary, presenting an all-in-one view of
 This view showcases the dashboard's ability to transition from high-level insights to granular detail. It features an expanded customer list that allows users to view and filter customers based on their risk profile. The table provides essential details like client_id, Risk Level, and key behavioral metrics, empowering teams to move from analysis to action.
 ![Dashboard customer expanded section](/powerbi_dashboard/main_expanded.JPG "Image of the main dashboard with expanded customer section")
 ### Filtered to high risk customers
-This screenshot demonstrates the dashboard's interactive filtering capabilities. By filtering for "High Risk" customers, the user can instantly see the specific profile of this critical segment. This view is particularly useful for retention teams, as it provides a targeted list of customers for immediate outreach and intervention.![Dashboard filtered to high risk users](/powerbi_dashboard/main_filtered_high_risk.JPG "Dashboard filtered to high risk user")
+This screenshot demonstrates the dashboard's interactive filtering capabilities. By filtering for "High Risk" customers, the user can instantly see the specific profile of this critical segment. This view is particularly useful for retention teams, as it provides a targeted list of customers for immediate outreach and intervention.
+![Dashboard filtered to high risk users](/powerbi_dashboard/main_filtered_high_risk.JPG "Dashboard filtered to high risk user")
 ---
 
 🎯 This notebook serves as the analytical engine behind the full 3-part project. The robust model and key insights generated here will directly power interactive dashboards in Part 2 and guide strategic decision-making and intervention strategies in Part 3.
