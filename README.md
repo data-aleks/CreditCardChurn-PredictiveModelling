@@ -17,6 +17,7 @@ This project addresses the critical challenge of customer churn within a bank’
 4.  **Feature Engineering**
 5.  **Model Development & Evaluation**
 6.  **Model Insights & Deployment**
+7.  **Power BI Dashboard**
 
 ## Tech Stack
 The project utilizes the following Python libraries and environment:
@@ -102,6 +103,16 @@ To translate model probabilities into actionable classifications, the optimal th
 ### Model Deployment & Actionable Data
 In the final step, the trained Gradient Boosting model was deployed. It was applied to the entire original dataset to generate churn probabilities for every customer. Utilizing the optimized threshold of **0.38**, customers were classified as 'predicted churn' or 'not churn'. Crucially, **126 customers (representing 1.24% of the base)** were identified as "currently at-risk" (predicted to churn but not yet attrited), providing a highly actionable segment for targeted retention efforts. The resulting dataset was then prepared and cleaned for seamless import into Power BI, enabling interactive dashboards for ongoing monitoring and strategic decision-making.
 
+
+## Power BI Dashboard
+### Main dashboard view 
+This dashboard serves as the executive summary, presenting an all-in-one view of the churn analysis. It combines a high-level overview of the churn problem and model performance with deep-dives into customer profiling. The layout includes demographic breakdowns, key behavioral metrics, and a visual showing model feature importance. This page is designed to give stakeholders a complete picture of the churn situation at a glance.
+![Main Dashboard](/powerbi_dashboard/main.JPG "Image of the main dashboard")
+### Expanded customer section
+This view showcases the dashboard's ability to transition from high-level insights to granular detail. It features an expanded customer list that allows users to view and filter customers based on their risk profile. The table provides essential details like client_id, Risk Level, and key behavioral metrics, empowering teams to move from analysis to action.
+![Dashboard customer expanded section](/powerbi_dashboard/main_expanded.JPG "Image of the main dashboard with expanded customer section")
+### Filtered to high risk customers
+This screenshot demonstrates the dashboard's interactive filtering capabilities. By filtering for "High Risk" customers, the user can instantly see the specific profile of this critical segment. This view is particularly useful for retention teams, as it provides a targeted list of customers for immediate outreach and intervention.![Dashboard filtered to high risk users](/powerbi_dashboard/main_filtered_high_risk.JPG "Dashboard filtered to high risk user")
 ---
 
 🎯 This notebook serves as the analytical engine behind the full 3-part project. The robust model and key insights generated here will directly power interactive dashboards in Part 2 and guide strategic decision-making and intervention strategies in Part 3.
